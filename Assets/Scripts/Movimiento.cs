@@ -131,16 +131,33 @@ public class Movimiento : MonoBehaviour
     {
         if (acelerando)
         {
-            // Cálculo de posición para centrar
-            float labelX = 10; // Pequeño margen desde el borde izquierdo
-            float labelY = Screen.height - 10 -20; // Pequeño margen desde el borde inferior
+            // Dimensiones del label
+            float labelWidth = 400;
+            float labelHeight = 60;
 
-            GUI.Label(new Rect(labelX, labelY, 200, 20), "¡Acelerador activado!");
+            // Margen desde la esquina inferior izquierda
+            float margenIzquierdo = 20;
+            float margenInferior = 40;
+
+            float labelX = margenIzquierdo;
+            float labelY = Screen.height - labelHeight - margenInferior;
+
+            // Crear estilo personalizado
+            GUIStyle estilo = new GUIStyle(GUI.skin.label);
+            estilo.fontSize = 35;
+            estilo.alignment = TextAnchor.MiddleLeft;
+            estilo.normal.textColor = Color.white;
+
+            GUI.Label(
+                new Rect(labelX, labelY, labelWidth, labelHeight),
+                "¡Acelerador activado!",
+                estilo
+            );
         }
         if (contador == 9)
         {
-            float labelWidth = 200; // Ancho del label
-            float labelHeight = 20; // Alto del label
+            float labelWidth = 300; // Ancho del label
+            float labelHeight = 50; // Alto del label
 
             // Posición en la esquina inferior izquierda
             float labelX = 10; // Margen desde el borde izquierdo
@@ -148,7 +165,7 @@ public class Movimiento : MonoBehaviour
 
             // Definir estilo personalizado
             GUIStyle estilo = new GUIStyle(GUI.skin.label);
-            estilo.fontSize = 15; // Tamaño de fuente grande
+            estilo.fontSize = 25; // Tamaño de fuente grande
             estilo.alignment = TextAnchor.MiddleLeft; // Alinear el texto hacia la izquierda
             estilo.normal.textColor = Color.green; // Cambiar color del texto a verde
 
@@ -170,7 +187,7 @@ public class Movimiento : MonoBehaviour
 
             // Definir estilo personalizado
             GUIStyle estilo = new GUIStyle(GUI.skin.label);
-            estilo.fontSize = 32; // Tamaño de fuente grande
+            estilo.fontSize = 40; // Tamaño de fuente grande
             estilo.alignment = TextAnchor.MiddleCenter; // Centrar el texto dentro del rectángulo
             estilo.normal.textColor = Color.green; // Cambiar color del texto a verde
 
