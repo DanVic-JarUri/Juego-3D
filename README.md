@@ -18,7 +18,8 @@ Videojuego en 3D desarrollado en Unity durante mi formación academica.
 - Pantalla de victoria.
 
 ## Cómo ejecutar
-Opción: Descargar la versión ejecutable desde Releases.
+Opción 1: Descargar la versión ejecutable desde Releases.
+
 Opción 2: Clonar el proyecto y abrirlo con Unity Hub. En este caso, es posible que algunos objetos del canvas y paneles hayan cambiado de posición.
 
 ## Autor
