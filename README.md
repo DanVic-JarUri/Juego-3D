@@ -5,7 +5,7 @@ README - JUEGO 3D
 # Juego 3D
 
 ## Descripción
-Videojuego desarrollado en Unity como proyecto personal para practicar programación, diseño de escenarios y mecánicas en tres dimensiones.
+Videojuego en 3D desarrollado en Unity durante mi formación academica.
 
 ## Tecnologías utilizadas
 - Unity
@@ -15,8 +15,6 @@ Videojuego desarrollado en Unity como proyecto personal para practicar programac
 - Escenarios 3D.
 - Control del jugador.
 - Sistema de objetivos.
-- Menú principal.
-- Menú de pausa.
 - Pantalla de victoria.
 
 ## Cómo ejecutar
